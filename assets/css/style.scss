@@ -1,0 +1,35 @@
+---
+---
+
+@import "{{ site.theme }}";
+
+/* Expand layout from fixed-width theme to full-width reading surface. */
+.wrapper {
+  width: 96%;
+  max-width: none;
+  margin: 0 auto;
+}
+
+header,
+section,
+footer {
+  float: none;
+  position: static;
+  width: 100%;
+}
+
+section {
+  border: none;
+  padding: 1.5rem 0;
+}
+
+/* Keep tables and long lines readable without clipping. */
+table,
+pre,
+code {
+  max-width: 100%;
+}
+
+pre {
+  overflow-x: auto;
+}
